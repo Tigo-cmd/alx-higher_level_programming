@@ -8,4 +8,4 @@ def pow(a, b):
             power = power * a
         return power
     else:
-        return 1 / pow(a, -b
+        return 1 / pow(a, -b)
