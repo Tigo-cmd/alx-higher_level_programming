@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 def pow(a, b):
- if b == 0:
+    if b == 0:
         return 1
     elif b > 0:
         power = 1
@@ -8,4 +8,4 @@ def pow(a, b):
             power = power * a
         return power
     else:
-        return 1 / pow(a, -b)
+        return 1 / pow(a, -b
