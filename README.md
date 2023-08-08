@@ -17,10 +17,8 @@ This repository contains projects and assignments related to high-level programm
 
 ```bash
 git clone https://github.com/Tigo-cmd/alx-high-level-programming.git
-cd alx-high-level-programming
-Certainly! Here's a README file template for your "alx-high-level-programming" repository:
 
-markdown
+cd alx-high-level-programming
 
 # alx-high-level-programming
 
