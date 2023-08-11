@@ -14,19 +14,15 @@ if __name__ == "__main__":
             case "+":
                 result = add(a, b)
                 print("{} + {} = {}".format(a, b, result))
-                exit(0)
             case "-":
                 result = sub(a, b)
                 print("{} - {} = {}".format(a, b, result))
-                exit(0)
             case "*":
                 result = mul(a, b)
                 print("{} * {} = {}".format(a, b, result))
-                exit(0)
             case "/":
                 result = div(a, b)
                 print("{} / {} = {}".format(a, b, result))
-                exit(0)
             case default:
                 print("Unknown operator. Available operators: +, -, * and /")
                 exit(1)
