@@ -2,7 +2,7 @@
 echo "file>"
 read file
 touch $file
-echo "#\\!/usr/bin/python3" > $file
+echo "#!/usr/bin/python3" > $file
 echo "Prototype>"
 read proto 
 echo $proto >> $file
