@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 def best_score(a_dictionary):
-    if a_dictionary is None:
+    if not a_dictionary:
         return None
     max_item = next(iter(a_dictionary))
     for i in a_dictionary:
