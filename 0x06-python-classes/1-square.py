@@ -7,7 +7,6 @@ class Square:
     __init__: initializes the constructor
     """
 
-
     def __init__(self, size):
         """Defines an attribute and initializes the size attribute
         size: size of the square many things depend on it (area computation, etc.)
