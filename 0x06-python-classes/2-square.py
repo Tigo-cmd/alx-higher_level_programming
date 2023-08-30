@@ -11,8 +11,9 @@ class Square:
         """Defines an attribute and initializes the size attribute
         size: size of the square many things depend on it (area computation, etc.)
         """
-        self.__size = size
         if not isinstance(size, int):
             raise TypeError("Size must be an integer")
-        if size < 0:
+        elif size < 0:
             raise ValueError("size must be >= 0")
+        else:
+            self.__size = size
