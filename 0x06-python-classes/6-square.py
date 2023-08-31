@@ -35,10 +35,15 @@ class Square:
 
     @property
     def position(self):
+        """position getter function for the square class returns the position"""
         return self.__position
 
     @position.setter
     def position(self, value):
+    """Position setter function which sets the position to the value passsed in
+       and checks if the value is an integer or < 0 otherwise it rasies 
+       an execption
+    """
         self.__position = value
         for i in value:
             if not isinstance(i, int) or i < 0:
