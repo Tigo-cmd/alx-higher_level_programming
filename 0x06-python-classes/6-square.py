@@ -40,10 +40,10 @@ class Square:
 
     @position.setter
     def position(self, value):
-    """Position setter function which sets the position to the value passsed in
-       and checks if the value is an integer or < 0 otherwise it rasies 
-       an execption
-    """
+        """Position setter function which sets the position to the value passed in
+        and checks if the value is an integer or < 0 otherwise it raises 
+        an exception
+        """
         self.__position = value
         for i in value:
             if not isinstance(i, int) or i < 0:
