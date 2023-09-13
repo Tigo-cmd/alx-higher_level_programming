@@ -7,4 +7,6 @@ def read_file(filename=""):
        Args:
            filename: file to be read and printed
     """
-    file = open(filename)
+    with open(filename) as file:
+        ptr = file.read()
+    print(ptr)
