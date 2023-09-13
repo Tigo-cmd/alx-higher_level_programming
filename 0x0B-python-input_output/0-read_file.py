@@ -7,5 +7,4 @@ def read_file(filename=""):
        Args:
            filename: file to be read and printed
     """
-    file = open(filename, encoding="utf-8")
-    print(file)
+    file = open(filename)
