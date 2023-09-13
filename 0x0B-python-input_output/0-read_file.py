@@ -7,6 +7,6 @@ def read_file(filename=""):
        Args:
            filename: file to be read and printed
     """
-    with open(filename) as file:
-        ptr = file.read()
-    print(ptr)
+    with open(filename, encoding='utf-8') as file:
+        for line in file:
+            print(line, end='')
