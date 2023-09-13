@@ -10,6 +10,9 @@ def write_file(filename="", text=""):
        Args:
            filename: file to be read and writing to
            text: string to be writing to filename
+       Return:
+           no of characters printed
     """
-    with open(filename, encoding="utf-8") as file:
-        file.write(text)
+    with open(filename, 'w', encoding="utf-8") as file:
+        main = file.write(text)
+    return main
