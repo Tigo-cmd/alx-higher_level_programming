@@ -62,7 +62,7 @@ class Rectangle:
             for row in range(self.__width):
                 rect.append(str(Rectangle.print_symbol))
             if col != self.__height - 1:
-                rectobj.append('\n')
+                rect.append('\n')
         return "".join(rect)
 
     def __repr__(self):
