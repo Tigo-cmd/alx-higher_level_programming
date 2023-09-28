@@ -17,7 +17,9 @@ class Square(Rectangle):
         super().__init__(size, size, x, y, id)
 
     def __str__(self):
-        """overloading method which returns [Square] (<id>) <x>/<y> - <size> - width or height"""
+        """overloading method which returns 
+        [Square] (<id>) <x>/<y> - <size> - width or height
+        """
         ret = f"[{self.__class__.__name__}] "
         ret += f"({self.id}) {self.__x}/{self.__y}"
         ret += f" - {self.size}"
