@@ -95,10 +95,10 @@ class Rectangle(Base):
 
     def __str__(self):
         """this returns [Rectangle] (<id>) <x>/<y> - <width>/<height>"""
-        ret = f"[{self.__class__.__name__}] "
-        ret += f"({self.id}) {self.__x}/{self.__y}"
-        ret += f" - {self.__width}/{self.__height}"
-        return ret
+        string = "[" + str(self.__class__.__name__) + "] "
+        string += "(" + str(self.id) + ") " + str(self.x) + "/" + str(self.y)
+        string += " - " + str(self.width) + "/" + str(self.height)
+        return (string)
 
     def update(self, *args):
         """assigns an argument to each attribute:"""
