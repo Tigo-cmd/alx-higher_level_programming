@@ -20,7 +20,7 @@ class Base:
         that returns the JSON string representation of list_dictionaries:
         """
         if list_dictionaries is None or list_dictionaries == []:
-            return []
+            return "[]"
         return json.dumps(list_dictionaries)
 
     @classmethod
@@ -33,6 +33,25 @@ class Base:
                 new_class = cls(1)
             new_class.update(**dictionary)
             return new_class
+
+    @classmethod
+    def save_to_file(cls, list_objs):
+        """class method def save_to_file(cls, list_objs): that writes
+        the JSON string representation of list_objs to a file
+        """
+        with open(f"{cls.__name__}.json", 'w') as file:
+            if list_objs is None:
+                file.write("[]")
+            else:
+                main_list = [i.to_dictonary() for i in list_objs]
+                file.write(Base.to_json_string(main_list))
+
+    @staticmethod
+    def from_json_string(json_string):
+        """ returns the list of the JSON string representation json_string:"""
+        if json_string is None or json_string == []:
+            return []
+        return json.loads(json_string)   
 
     @classmethod
     def load_from_file(cls):
