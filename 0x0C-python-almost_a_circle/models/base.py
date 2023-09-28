@@ -51,7 +51,7 @@ class Base:
         """ returns the list of the JSON string representation json_string:"""
         if json_string is None or json_string == []:
             return []
-        return json.loads(json_string)   
+        return json.loads(list(json_string))   
 
     @classmethod
     def load_from_file(cls):
