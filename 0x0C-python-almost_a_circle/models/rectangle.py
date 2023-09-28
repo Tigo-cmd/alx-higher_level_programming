@@ -2,6 +2,9 @@
 """This is a Rectangle class with basic attributes"""
 
 
+from models.base import Base
+
+
 class Rectangle(Base):
     """This Creates a Rectangle Class
     Args:
