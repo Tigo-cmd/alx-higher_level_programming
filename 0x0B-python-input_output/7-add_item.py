@@ -14,9 +14,12 @@ save_to_json_file = __import__('5-save_to_json_file').save_to_json_file
 main_file = "add_item.json"
 existing = []
 if len(sys.argv) > 1:
-    existing = load_from_json_file(main_file)
+    try:
+        existing = load_from_json_file(main_file)
+    except FileNotFoundError:
+        existing = []
     new_list = sys.argv[1:]
     existing.extend(new_list)
     save_to_json_file(existing, main_file)
-else: 
+else:
     save_to_json_file(existing, main_file)
