@@ -22,4 +22,3 @@ class Student:
          of a Student instance (same as 8-class_to_json.py)
         """
         return self.__dict__
-
