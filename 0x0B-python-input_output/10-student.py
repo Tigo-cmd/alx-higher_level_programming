@@ -21,13 +21,6 @@ class Student:
         retrieves a dictionary representation
          of a Student instance (same as 8-class_to_json.py)
         """
-        if isinstance(attrs, list):
-            for i in attrs:
-                if all(type(i)) is str:
-                    for j in attrs:
-                        if hasattr(self, j):
-                            return j
-                        else:
-                            return getattr(self, j)
-                            
+         if (type(attrs) is list and all(type(item) is str for item in attrs)):
+            return {i: getattr(self, i) for i in attrs if hasattr(self, i)}   
         return self.__dict__
