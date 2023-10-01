@@ -26,7 +26,8 @@ class Student:
                 if all(type(i)) is str:
                     for j in attrs:
                         if hasattr(self, j):
-                            return getattr(self, j)
-                        else:
                             return j
+                        else:
+                            return getattr(self, j)
+                            
         return self.__dict__
