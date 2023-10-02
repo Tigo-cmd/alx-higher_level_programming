@@ -4,12 +4,12 @@ Square = __import__("9.rectangle").Rectangle
 
 
 class Square(Square):
-    """class Square that inherits a Rectangle"""
+    """implements the square class"""
 
     def __init__(self, size):
-    """initializes a square
-       
-       Args:
-       size: size of the square
-    """
+        """initializes a square
+	       
+	Args:
+	size: size of the square
+	"""
         super().__init__(size, size)
