@@ -7,5 +7,6 @@ echo "Prototype >"
 read proto 
 echo $proto >> $file
 chmod 764 $file
+git add $file
 bash dirgit.sh
 gedit $file
