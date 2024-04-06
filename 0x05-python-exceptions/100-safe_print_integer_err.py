@@ -7,5 +7,6 @@ def safe_print_integer_err(value):
         print("{:d}".format(value))
         return True
     except ValueError:
-        print("Exception:", file=sys.stderr)
-        print("{} is not an integer".format(value), file=sys.stderr)
+        print("Exception: {} is not an integer".format(sys.exc_info()[1]), file=sys.stderr)
+        return False
+
