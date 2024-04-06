@@ -24,8 +24,7 @@ class Square:
 
     def area(self):
         """returns the current square area
-           
-           Args: 
+           Args:
                size: private instance attribute
         """
         return self.__size ** 2
