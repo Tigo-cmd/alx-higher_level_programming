@@ -9,7 +9,7 @@ class Square:
             Private instance attribute: size
             Args:
                 size (int) : private instance attribute
-            Returns: 
+            Returns:
                 nothing
         """
         self.__size = size
