@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""rectangle class module"""
+"""rectangle class module by nwali ugonna"""
 
 
 class Rectangle:
