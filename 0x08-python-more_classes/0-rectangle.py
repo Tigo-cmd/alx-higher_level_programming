@@ -3,5 +3,5 @@
 
 
 class Rectangle:
-    """This class defines a rectangle"""
+    """This class defines a rectangle class implementation"""
     pass
