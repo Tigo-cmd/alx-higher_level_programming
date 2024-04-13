@@ -1,0 +1,19 @@
+>>> text_indentation = __import__('5-text_indentation').text_indentation
+>>> text_indentation("my name is ugonna nwali. my name is ugonna nwali")
+my name is ugonna nwali.
+<BLANKLINE>
+my name is ugonna nwali
+>>> main = "This is...  a test? What about this:    spacing."
+>>> text_indentation(main)
+This is.
+<BLANKLINE>
+.
+<BLANKLINE>
+.
+<BLANKLINE>
+a test?
+<BLANKLINE>
+What about this:
+<BLANKLINE>
+spacing.
+<BLANKLINE>
