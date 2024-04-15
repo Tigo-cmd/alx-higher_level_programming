@@ -8,10 +8,12 @@ class Rectangle:
 
     def __init__(self, width, height):
         """initializing function at first call
+        
         Args:
             width: width of the rectangle
             height: height of the rectangle
         """
-        super().__init__()
+        self.integer_validator("width", width)
         self.__width = width
+        self.integer_validator("height", height)
         self.__height = height
