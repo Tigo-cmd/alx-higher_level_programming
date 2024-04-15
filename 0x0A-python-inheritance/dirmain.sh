@@ -10,7 +10,6 @@ cp filecreate.sh $dir
 cp pyfxn.sh $dir
 cp cfxn.sh $dir
 cp pycreate.sh $dir
-git add $dir
-echo $dir > README.md
 cd $dir
+echo $dir > README.md
 bash dirgit.sh
