@@ -1,9 +1,11 @@
 #!/usr/bin/python3
-"""defines a Square class module"""
+"""defines a Square class module for functions"""
 
 
 class Square(Rectangle):
-    """a rectangle class that inherits from Rectangle class"""
+    """a rectangle class that inherits from Rectangle
+     class
+     """
 
     def __init__(self, size):
         """initializing function at first call
