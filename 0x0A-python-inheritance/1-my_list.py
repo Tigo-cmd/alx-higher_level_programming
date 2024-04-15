@@ -1,12 +1,9 @@
 #!/usr/bin/python3
-"""a class Module"""
+"""MyList class Module"""
 
 
 class MyList(list):
-    """a class that inherits form list
-    Args:
-        print_sorted(self): function that prints sorted list
-    """
+    """a class that inherits form list"""
     def __init__(self):
         """this initislizes the object"""
         super().__init__()
