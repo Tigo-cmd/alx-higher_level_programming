@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""defines a Rectangle class module and functions"""
+"""defines a Rectangle class module"""
 
 
 class Rectangle:
@@ -8,12 +8,10 @@ class Rectangle:
 
     def __init__(self, width, height):
         """initializing function at first call
-        
         Args:
             width: width of the rectangle
             height: height of the rectangle
         """
-        self.integer_validator("width", width)
+        super().__init__()
         self.__width = width
-        self.integer_validator("height", height)
         self.__height = height
