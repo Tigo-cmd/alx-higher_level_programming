@@ -7,6 +7,9 @@ True
 >>> mod = __import__("1-my_list").MyList.print_sorted.__doc__
 >>> len(mod) > 1
 True
+>>> l = MyList()
+>>> l.print_sorted()
+[]
 >>> l.append(1)
 >>> l.append(2)
 >>> l.append(3)
