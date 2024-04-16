@@ -1,13 +1,10 @@
 #!/usr/bin/python3
-"""defines a Rectangle class module for functionality
-"""
+"""defines a Rectangle class module"""
 BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
 
 class Rectangle:
-    """a rectangle class that inherits from BaseGeometry class
-       documentation errors alert
-    """
+    """a rectangle class that inherits from BaseGeometry class"""
 
     def __init__(self, width, height):
         """initializing function at first call of class
