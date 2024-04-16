@@ -2,9 +2,10 @@
 """defines a Rectangle class module
    and functions
 """
+BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
 
-class Rectangle:
+class Rectangle(BaseGeometry):
     """a rectangle class that inherits class for 
     functionality
     """
@@ -16,7 +17,9 @@ class Rectangle:
             height: height of the rectangle
         """
         super().__init__()
+        self.integer_validator("width", width)
         self.__width = width
+        self.integer_validator("height", height)
         self.__height = height
 
     def area(self):
