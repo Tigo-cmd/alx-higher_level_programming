@@ -4,7 +4,7 @@
 
 
 class Rectangle:
-    """a rectangle class that inherits from BaseGeometry class
+    """a rectangle class that inherits from class
        documentation errors alert
     """
 
