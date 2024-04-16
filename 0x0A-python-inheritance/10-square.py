@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """defines a Square class module for functions"""
-Rectangle = __import__(9-rectangle.py).Rectangle
+Rectangle = __import__('9-rectangle').Rectangle
 
 
 class Square(Rectangle):
