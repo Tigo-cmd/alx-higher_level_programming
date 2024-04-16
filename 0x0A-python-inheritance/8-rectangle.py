@@ -1,9 +1,10 @@
 #!/usr/bin/python3
-"""defines a Rectangle class module"""
+"""defines a Rectangle class module for functionality"""
 
 
 class Rectangle:
     """a rectangle class that inherits from BaseGeometry class
+       documentation errors alert
     """
 
     def __init__(self, width, height):
