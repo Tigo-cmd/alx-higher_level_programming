@@ -9,7 +9,7 @@ def add_attribute(a_class, name, value):
            name = attribute of the class to be set
            value = param of the name attribute
     """
-    if hasattr(a_class, '__dict__'):
+    try:
         setattr(a_class, name, value)
-    else:
+    except AttributeError:
         raise TypeError("can't add new attributes")
