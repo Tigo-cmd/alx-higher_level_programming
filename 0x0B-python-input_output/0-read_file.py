@@ -8,6 +8,7 @@ def read_file(filename=""):
     :param filename: file to be read
     :return: nothing
     """
+    
     with open(filename, encoding='UTF8') as file:
         """reads the files and automatically closes it"""
         file.read()
