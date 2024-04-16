@@ -1,0 +1,17 @@
+>>> geometry = BaseGeometry()
+>>> geometry.area()
+Traceback (most recent call last):
+...
+Exception: area() is not implemented
+
+>>> geometry.integer_validator("side", 5)
+
+>>> geometry.integer_validator("side", "five")
+Traceback (most recent call last):
+...
+TypeError: side must be an integer
+
+>>> geometry.integer_validator("side", 0)
+Traceback (most recent call last):
+...
+ValueError: side must be greater than 0	
