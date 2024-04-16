@@ -9,5 +9,5 @@ def read_file(filename=""):
     :return: nothing
     """
     
-    with open(filename, "r", encoding='utf-8') as tigo:
-        print(tigo.read())
+    with open(filename, encoding='utf-8') as f:
+        print(f.read(), end="")
