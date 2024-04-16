@@ -1,10 +1,10 @@
 #!/usr/bin/python3
-"""Defines a student class module"""
+"""Defines a student class module function"""
 import json
 
 
 class Student:
-    """a class Student that defines a student initials"""
+    """a class Student that defines a student """
     def __init__(self, first_name, last_name, age):
         """initializing function at first callS
            first_name: students first name
