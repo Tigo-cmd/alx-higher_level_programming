@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-"""defines a Rectangle class module for functionality"""
+"""defines a Rectangle class module for functionality
+"""
 
 
 class Rectangle:
@@ -8,7 +9,7 @@ class Rectangle:
     """
 
     def __init__(self, width, height):
-        """initializing function at first call
+        """initializing function at first call of class
         Args:
             width: width of the rectangle
             height: height of the rectangle
